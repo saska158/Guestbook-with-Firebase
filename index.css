@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #7E7E73;
+}
+
+p {
+    margin: 0;
+}
+
+input {
+    border: none;
+    outline: none;
+    text-align: center;
+    padding: 1em;
+}
+
+.guestbook-container {
+    border: .5px solid #7E7E73;
+    border-top: none;
+    min-height: 100vh;
+    position: relative;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.guestbook-form {
+    width: 100%;
+    padding: 0 .3em;
+    align-items: center;
+    border-top: .5px solid #7E7E73;
+    border-bottom: .5px solid #7E7E73;
+    background: #fff;
+    z-index: 9;
+    display: flex;
+    gap: 1em;
+}
+
+.name-input {
+    width: 20%;
+}
+
+.message-input {
+    width: 60%;
+}
+
+.guestbook-btn {
+    border: 0;
+    background: none;
+    color: inherit;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.guestbook-content {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    text-align: right;
+    padding: 0 1em;
+}
+
+.message {
+    word-wrap: break-word;
+    background-color: #D2D2C0;
+    border-radius: 8px;
+    padding: 1em;
+    margin-top: 1em;
+    width: 60%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.visitor-info {
+    font-size: .8rem;
+    margin-top: 1.3em;
+    color: #97978f;
+}
+
+
+@media (min-width: 640px) {
+    .guestbook-container {
+        width: 60%;
+        margin: 0 auto;
+    }
+}

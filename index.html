@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <title>Guestbook</title>
+</head>
+<body>
+
+    <div class="guestbook-container">
+        <form class="guestbook-form" id="guestbook-form">
+            <input 
+                class="name-input"
+                id="name-input"
+                placeholder="Name"
+                required
+            >
+            <input 
+                class="message-input"
+                id="message-input"
+                type="text"
+                placeholder="Tell me a secret"
+                required
+            >
+            <button class="guestbook-btn" id="guestbook-btn">Send</button>
+        </form>
+        <div class="guestbook-content" id="guestbook-content"></div>
+    </div>
+    
+    <script src="index.js" type="module"></script>
+</body>
+</html>
